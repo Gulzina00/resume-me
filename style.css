@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;1,400;1,500;1,600&family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,800&family=Poppins:ital,wght@0,100;0,500;1,100&family=Roboto+Slab:wght@100;300;400&family=Roboto:wght@100;300;400&family=Rubik+Beastly&family=Sen&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family:'Roboto Slab', sans-serif;
+    background-color: rgb(8, 8, 8);    
+    color: white; 
+}
+
+hr{
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(8, 8, 8);;
+    display: flex;
+    position: fixed;
+    left: 250px;
+    padding-left: 40px;
+}
+
+.navbar-name{
+    margin-top: 70px;
+    position: relative;
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    text-transform: uppercase;
+    font-weight: 350;
+}
+
+
+
+.navbar-name::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stoke: 0vw white;
+    border-right: 2px solid #ebfc55;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    60%, 90%
+    {
+        width: 55%;
+    }
+}
+.navbar-item{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15px 0px;
+}
+.navbar-skill-desc{
+    margin-top: 20px;
+}
+
+.navbar-skill-univer{
+    font-size: 14px;
+    font-weight: 250;
+}
+
+.navbar-skill-univer-span{
+    text-decoration: underline;
+    font-size: 16px;
+}
+.sidebar{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 0 0 6px rgba(228, 116, 204, 0.8);
+}
+
+.sidebar-img{
+    width: 180px;
+    height: auto;
+    margin: 30px 30px;
+    object-fit: cover;
+}
+
+.sidebar-contact{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 350;
+    background-color: rgb(14, 81, 206);
+}
+
+.sidebar-item{
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.sidebar-item-list{
+    margin: 5px 5px;
+    padding-right: 35px;
+    font-size: 14px;
+    font-weight: 250;
+}
+
+.sidebar-item-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar-item-skill{
+    margin: 5px 5px;
+    padding-right: 35px;
+    font-size: 14px;
+    font-weight: 250;
+}
